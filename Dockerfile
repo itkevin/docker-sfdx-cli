@@ -12,3 +12,4 @@ RUN sfdx plugins --core
 
 # revert to low privilege user
 USER node
+ 
