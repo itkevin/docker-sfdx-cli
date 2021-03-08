@@ -9,10 +9,6 @@ RUN apk add --update --no-cache git openssh ca-certificates openssl jq gettext x
 RUN npm install sfdx-cli --global
 RUN sfdx --version
 RUN sfdx plugins --core
-RUN git clone https://github.com/ChuckJonas/sfdx-git-packager.git packager
-RUN cd packager
-RUN sfdx plugins:link
 
 # revert to low privilege user
 USER node
- 
