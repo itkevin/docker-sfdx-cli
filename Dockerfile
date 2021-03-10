@@ -9,6 +9,9 @@ RUN apk add --update --no-cache git openssh ca-certificates openssl jq gettext x
 RUN npm install sfdx-cli --global
 RUN sfdx --version
 RUN sfdx plugins --core
+ADD install.sh /install.sh
+RUN chmod +x /install.sh
+RUN /install.sh
 
 # revert to low privilege user
 USER node
