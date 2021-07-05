@@ -2,5 +2,5 @@
 
 git clone https://github.com/ChuckJonas/sfdx-git-packager.git packager
 cd packager
-npm install
+git checkout 0.3.1
 sfdx plugins:link
