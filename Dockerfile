@@ -16,3 +16,4 @@ USER node
 WORKDIR /home/node/
 
 RUN /home/node/install.sh
+RUN sfdx plugins --core
